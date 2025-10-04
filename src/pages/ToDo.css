@@ -1,0 +1,132 @@
+.todo-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fde2e4, #e0c3fc, #c2e9fb);
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 40px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.todo-box {
+  width: 100%;
+  max-width: 500px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.todo-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #6b21a8;
+  margin-bottom: 20px;
+}
+
+.todo-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.todo-form input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.todo-form input:focus {
+  border-color: #a855f7;
+  box-shadow: 0 0 6px rgba(168, 85, 247, 0.4);
+}
+
+.todo-form button {
+  padding: 12px;
+  background: #a855f7;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.todo-form button:hover {
+  background: #9333ea;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-item {
+  background: #faf5ff;
+  border: 1px solid #e9d5ff;
+  border-radius: 14px;
+  padding: 14px 18px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s;
+}
+
+.todo-item:hover {
+  transform: scale(1.02);
+}
+
+.todo-info h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #6b21a8;
+}
+
+.todo-info p {
+  margin: 2px 0 0;
+  color: #4b5563;
+  font-size: 0.9rem;
+}
+
+.todo-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.todo-actions button {
+  background: transparent;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.todo-actions button:first-child {
+  color: #2563eb; 
+}
+
+.todo-actions button:first-child:hover {
+  color: #1d4ed8;
+}
+
+.todo-actions button:last-child {
+  color: #dc2626; 
+}
+
+.todo-actions button:last-child:hover {
+  color: #b91c1c;
+}
+
+.todo-empty {
+  text-align: center;
+  color: #6b7280;
+  font-style: italic;
+  margin-top: 10px;
+}
